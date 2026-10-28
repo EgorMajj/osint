@@ -623,7 +623,7 @@ body[data-theme="light"] #chatbot-panel > div:first-child
     };
 
 // ✅ Versioning control for localStorage layout, so change v3,v4,v5... each time when update github
-	const toolConfigVersion = "v3"; // Change this version string with each new update
+	const toolConfigVersion = "v4"; // Change this version string with each new update
 	const storedVersion = localStorage.getItem("toolConfigVersion");
 
 	if (storedVersion !== toolConfigVersion) {
@@ -972,6 +972,13 @@ body[data-theme="light"] #chatbot-panel > div:first-child
 		tags: ["proxy","vpn","ip","tor"]
 	},
 	
+    {
+        name: 'ShieldLabs Anonymity Checker',
+        url: 'https://demo.shieldlabs.ai/anonymity-checker',
+        desc: 'Free diagnostic for the current browser visit: public IP, device identifiers, risk score, VPN, proxy, Tor and bot signals.',
+        tags: ["ip", "vpn", "proxy", "tor", "bot detection", "fraud prevention"],
+        skipSearch: true
+    },
 	 {
 		name:'IP Reputation Check',
 		url:'https://www.ipqualityscore.com/ip-reputation-check/lookup/',
